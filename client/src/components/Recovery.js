@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Password = () => {
+const Recovery = () => {
   return (
     <div>
       
@@ -8,4 +8,4 @@ const Password = () => {
   )
 }
 
-export default Password
+export default Recovery
