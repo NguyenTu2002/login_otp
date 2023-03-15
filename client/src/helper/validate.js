@@ -63,3 +63,8 @@ function emailVerify(error ={}, values){
 
     return error;
 }
+//profile
+export async function profileValidation(values){
+    const errors = emailVerify({}, values);
+    return errors;
+}
