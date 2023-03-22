@@ -177,13 +177,9 @@ export async function createResetSession(req, res) {
 };
 export async function resetPassword(req, res) {
     try {
-
         if (!req.app.locals.resetSession) return res.status(440).send({ error: "Session expired!" });
-
         const { username, password } = req.body;
-
         try {
-
             UserModel.findOne({ username })
                 .then(user => {
                     bcrypt.hash(password, 10)
